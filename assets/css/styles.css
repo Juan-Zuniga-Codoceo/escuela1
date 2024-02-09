@@ -1,0 +1,472 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+    * {
+        margin:0;
+        padding:0;
+        border: 0;
+    }
+    
+/*-------------Nav---------------------------*/
+/* Hacer que el fondo del nav sea blanco */
+.navbar-custom {
+    background-color: white !important ;
+}
+/* Cambiar el color del texto del menú de navegación */
+.navbar-custom .navbar-nav .nav-link {
+    position: relative;
+    font-size: 20px; /* Tamaño de fuente personalizado */
+    margin-right: 20px; /* Separación entre elementos del menú */
+}
+/* Cambiar el color del texto del menú de navegación al pasar el ratón y subrayar con línea roja */
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: black ; /* Cambia el color del texto al pasar el ratón */
+    text-decoration: underline red; /* Subrayar el texto con línea roja */
+}
+.navbar-brand {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/*--------------------Carrusel-----------------------------------*/
+.section-carrusel {
+    margin-top: 50px; /* Margen superior para separar del navbar */
+}
+
+.carousel-item img {
+    max-height: 300px !important; /* Altura máxima para las imágenes del carrusel */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    font-size: 15px !important; /* Tamaño de fuente para los títulos y textos de la leyenda */
+    color: white; /* Color del texto de la leyenda */
+}
+
+.carousel {
+    border-radius: 10px; /* Redondear las esquinas del carrusel */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 1100px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centra horizontalmente el carrusel */
+}
+
+.carousel-inner {
+    border-radius: 15px; /* Redondear las esquinas de los elementos internos del carrusel */
+}
+
+.carousel-item {
+    border-radius: 15px; /* Redondear las esquinas de cada elemento del carrusel */
+}
+
+.carousel-caption {
+    border-radius: 15px; /* Redondear las esquinas de la leyenda del carrusel */
+}
+
+.carousel-caption .btn {
+    margin-top: 10px; /* Espacio entre el texto y el botón */
+}
+
+/* Estilos del botón de "Leer más" */
+.carousel-caption .btn {
+    margin-top: 10px; /* Espacio entre el texto y el botón */
+    background-color: #d9534f; /* Cambiar el color de fondo del botón a un tono de rojo más oscuro */
+    border-color: #d9534f; /* Cambiar el color del borde del botón al mismo tono de rojo */
+    color: #fff; /* Cambiar el color del texto del botón a blanco */
+    padding: 8px 16px; /* Ajustar el padding del botón para hacerlo un poco más pequeño */
+    transition: background-color 0.3s ease; /* Agregar una transición suave al color de fondo */
+}
+
+.carousel-caption .btn:hover {
+    background-color: #c9302c; /* Cambiar el tono de rojo al pasar el ratón para hacerlo un poco más oscuro */
+    border-color: #c9302c; /* Cambiar el tono del borde al pasar el ratón */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Fondo negro para las flechas */
+    color: white; /* Color blanco para las flechas */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px; /* Ancho de las flechas */
+    height: 50px; /* Altura de las flechas */
+    border-radius: 50%; /* Redondear las flechas */
+    top: calc(50% - 25px); /* Posición verticalmente centrada */
+}
+
+/*-------------------------Cards--------------------*/
+/* Estilos para las Cards */
+.card-custom {
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    height: 220px; /* Altura aumentada */
+    width: 220px;
+    display: inline-block; /* Cambiamos a display inline-block para que se muestren en línea */
+    margin-right: 20px; /* Margen derecho */
+}
+
+.card-custom .card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajustamos la altura al 100% */
+}
+
+.card-custom .btn {
+    background-color: #ff9f9f;
+    border-color: #ff9f9f;
+    color: #fff;
+    border-radius: 15px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente reducido */
+    padding: 8px 16px; /* Espacio interno reducido */
+    margin-top: 10px; /* Margen superior */
+}
+
+.card-custom .btn:hover {
+    background-color: #ff7f7f;
+    border-color: #ff7f7f;
+}
+
+/* Colores personalizados para las Cards */
+.card-1 { background-color: #FFBCBC; }
+.card-2 { background-color: #A0E7E5; }
+.card-3 { background-color: #FFF7BB; }
+.card-4 { background-color: #D7AEFB; }
+.card-5 { background-color: #FFD3B6; }
+
+/* Estilos para los iconos */
+.icon-dark {
+    font-size: 72px; /* Tamaño de icono aumentado */
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.section-cards {
+    margin-top: 50px;
+}
+
+/* Estilos adicionales para separación entre tarjetas */
+.section-cards .row {
+    justify-content: space-between; /* Espacio entre las tarjetas */
+}
+
+/*---------------------- Galeria y calendario/ dual card------------------------------*/
+
+.card-custom-dual {
+    width: 500px; /* Ajusta el ancho */
+    height: 400px; /* Ajusta la altura */
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-top: 50px;
+}
+
+.card-custom-dual:hover {
+    transform: scale(1.05);
+}
+
+.card-custom-dual .card-img-top {
+    height: 100%; /* Ajusta la altura de la imagen */
+    overflow: hidden;
+    position: relative;
+}
+
+.card-custom-dual .card-img-top img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card-custom-dual .card-tab {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: black; /* Color de texto para las pestañas */
+}
+
+.card-custom-dual-gallery .card-tab {
+    background-color: #A0E7E5; /* Color azul pastel para la pestaña de galería */
+}
+
+.card-custom-dual .card-tab a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card-custom-dual .card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-custom-dual .btn {
+    border-radius: 15px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.card-custom-dual-calendar {
+    width: 500px; /* Ancho fijo para la card de calendario */
+    height: 400px; /* Altura fija para la card de calendario */
+}
+
+.card-custom-dual-calendar .card-download {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px; /* Ajusta los márgenes derecho e izquierdo */
+}
+
+.card-custom-dual-calendar .card-download .btn {
+    width: 180px; /* Ancho fijo para el botón */
+    display: block; /* Convertir el botón en un elemento de bloque */
+    margin: 0 auto; /* Centrar el botón horizontalmente */
+}
+.card-custom-dual-calendar .card-tab {
+    background-color: #FFBCBC; /* Color verde pastel para la pestaña de calendario */
+}
+
+/*-----------------Servicios y convenios-----------*/
+
+.section-services {
+    margin-top: 50px; /* Margen superior */
+}
+
+.section-services .section-title {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.card-custom-service {
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    height: 250px; /* Ajusta la altura */
+}
+
+.card-custom-service .card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-custom-service .icon-dark {
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.card-custom-service.card-1 {
+    background-color: #A0E7E5; /* Azul pastel */
+}
+
+.card-custom-service.card-2 {
+    background-color: #FFBCBC; /* Rojo pastel */
+}
+
+.card-custom-service.card-3 {
+    background-color: #FFF7BB; /* Amarillo pastel */
+}
+
+.card-custom-service.card-4 {
+    background-color: #D7AEFB; /* Violeta pastel */
+}
+
+.card-custom-service .card-text {
+    margin-bottom: 10px; /* Reduce el espacio inferior del párrafo */
+}
+
+.card-custom-service .read-more-link {
+    color: #FF5733; /* Rojo */
+    text-decoration: none;
+}
+
+.card-custom-service .read-more-link:hover {
+    color: #FF6B4E; /* Rojo más fuerte al pasar el ratón */
+}
+
+/*-------------------------Blog-----------------*/
+
+/* Estilos para las Cards del blog */
+.blog-section {
+    margin-top: 50px;
+}
+
+.card-custom-blog {
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-custom-blog .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-custom-blog .card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-custom-blog .card-title {
+    font-family: 'Caveat', cursive;
+}
+
+.read-more-link {
+    color: #FF5733; /* Rojo */
+    text-decoration: none;
+}
+
+.read-more-link:hover {
+    color: #FF7854; /* Rojo más claro al pasar el ratón */
+}
+
+.section-title {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333; /* Color de texto */
+}
+.btn-read-all {
+    background-color: #FF5733; /* Color rojo */
+    color: #fff; /* Letras blancas */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Eliminar subrayado */
+    transition: background-color 0.3s; /* Transición al pasar el ratón */
+}
+
+.btn-read-all:hover {
+    background-color: #FF7854; /* Color rojo más claro al pasar el ratón */
+}
+
+/*----------------------Diario mural-------------------------------------------*/
+
+.diario-mural-section {
+    margin-top: 50px;
+}
+
+.diario-mural-card {
+    background-color: #286586; /* Color de fondo azul oscuro */
+    color: white; /* Color del texto blanco */
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.diario-mural-card .card-img-top {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px; /* Bordes redondeados solo en la esquina superior izquierda */
+    border-bottom-left-radius: 15px; /* Bordes redondeados solo en la esquina inferior izquierda */
+}
+
+.diario-mural-card .card-body {
+    padding: 20px;
+}
+
+.activities-column,
+.news-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.activities-column {
+    border-right: 1px solid #666; /* Borde derecho gris oscuro */
+}
+
+.card-title {
+    color: #FF5733; /* Color rojo */
+    margin-bottom: 20px;
+}
+
+.activity,
+.news {
+    margin-bottom: 20px;
+}
+
+.btn-download-activity {
+    background-color: #41c69c; /* Color de fondo verde pastel para actividades */
+    border-color: #98FB98; /* Color del borde verde pastel para actividades */
+}
+
+.btn-download-news {
+    background-color: #FFFF99; /* Color de fondo amarillo pastel para noticias */
+    border-color: #FFFF99; /* Color del borde amarillo pastel para noticias */
+}
+
+.btn-download-activity:hover {
+    background-color: #90EE90; /* Color de fondo verde pastel más claro al pasar el ratón para actividades */
+    border-color: #90EE90; /* Color del borde verde pastel más claro al pasar el ratón para actividades */
+}
+
+.btn-download-news:hover {
+    background-color: #FFFF66; /* Color de fondo amarillo pastel más claro al pasar el ratón para noticias */
+    border-color: #FFFF66; /* Color del borde amarillo pastel más claro al pasar el ratón para noticias */
+}
+
+
+/*-----------------------Footer-----------------------------*/
+.footer {
+    background-color: #faf6f6e5; /* Color de fondo del footer más oscuro */
+    color: #030303; /* Color del texto del footer */
+    padding: 20px 0; /* Espaciado interno del footer */
+}
+
+.footer-logo {
+    width: 250px; /* Ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Para centrar el logo */
+    margin-bottom: 20px; /* Espacio inferior del logo */
+}
+
+.footer-heading {
+    font-family: 'Caveat', cursive; /* Tipo de letra */
+}
+
+.footer-list {
+    list-style-type: none; /* Elimina los estilos de lista */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+}
+
+.footer-list li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.footer-social-icons a {
+    color: #fff; /* Color de los iconos de redes sociales */
+    font-size: 20px; /* Tamaño de los iconos */
+    margin-right: 10px; /* Espacio entre los iconos */
+}
+
+.footer-social-icons a:hover {
+    color: #FF5733; /* Cambio de color al pasar el ratón */
+}
+
+
+
